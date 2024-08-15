@@ -336,8 +336,11 @@ if __name__ == "__main__":
 
     if args.merge is not None:
         files = [a_file for a_file_ptr in args.merge for a_file in glob.glob(a_file_ptr)]
-        utils.validate_length(files, 2, "Please specify more than one file to merge")
-        file_ops.merge(files, args.saveas, args)
+        if len(files) <= 1:  # Add yellow SKIPPING text
+            print("\033[93m SKIPPING: One or No files found for merging\033[0m")
+        else:
+            utils.validate_length(files, 2, "Please specify more than one file to merge")
+            file_ops.merge(files, args.saveas, args)
 
     if args.append is not None:
         utils.validate_length(args.append, 2, "Please specify more than one file to append")
