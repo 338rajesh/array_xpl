@@ -15,7 +15,7 @@ requires-python = ">=3.10.0"
 readme = "README.md"
 
 [project.urls]
-"Homepage" = "https://github.com/338rajesh/npi"
+"Homepage" = "https://github.com/338rajesh/apply_xpl"
 
 [project.scripts]
-npxyz = "array_xpl.array_xpl:main"
+array_xpl = "array_xpl.array_xpl:main"
