@@ -1,4 +1,4 @@
-# NPY viewer
+# array_xpl: A command line tool for exploring and manipulating arrays
 
 ## Reference
 

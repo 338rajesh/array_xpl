@@ -3,3 +3,7 @@ test
 arx
 .idea
 __pycache__/
+.venv/
+*.egg-info
+dist
+.vscode
