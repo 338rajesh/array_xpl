@@ -1,9 +1,6 @@
 # List of things to do
 
-## unique values
-
-+ unique values and their counts
-
-## Top 10
-
-## Bot 10
+* Document generation
+* For text and npy files
+* Unit tests
+* Integration tests
